@@ -7,3 +7,12 @@ Create ROI-Specific Atlas from the HCPex (Glasser) Atlas: This script generates 
 ## *binerize_nifti.m*
 
 Binarize NIfTI Image: This script converts a NIfTI image into a binary mask using SPM. Voxels with values greater than zero are assigned a value of 1, while all other voxels are assigned a value of 0. The resulting binary mask is saved as a new NIfTI file and can be used for ROI analyses, masking procedures, or neuroimaging visualization workflows.
+
+## *Calculate_volume.m*
+
+ROI Volume Extraction: This script calculates ROI-wise volume measurements from a set of NIfTI images using a labeled atlas. For each subject image, the script identifies voxels belonging to each atlas-defined region and computes the sum of voxel intensities within that ROI. The resulting ROI volume vector is saved for each subject as a MATLAB (.mat) file.
+
+Inputs
+Subject images (*.nii): Structural MRI images, tissue probability maps, or other voxel-wise measurements.
+Atlas file (*.nii): A labeled atlas where each ROI is assigned a unique integer label.
+Output directory: Location where ROI volume results will be saved.
