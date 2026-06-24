@@ -46,5 +46,24 @@ SBQ–Brain Volume Association (Covariate-Corrected Analysis): This MATLAB code 
 * Step 2: Normalization: Residuals are standardized using healthy controls: Z-score = (Residual - Mean_HC) / SD_HC
 * Step 3: Behavioral association. For patients only: SBQ ~ Volume (z-scored, covariate-corrected)
 
+## *ANCOVA_group_comparison.m*
+
+ANCOVA Group Comparison (HC vs Low vs High SBQ): This script performs ROI-wise ANCOVA to compare brain volumes across: Healthy Controls (HC), Low SBQ patients and High SBQ patients. SBQ is used to split patients into subgroups.
+
+* Step 1: Data Loading. The script requires the following variables:
+- `volume_HC` : HC ROI matrix (subjects × ROIs)
+- `volume_bvFTD` : patient ROI matrix
+- `age_HC`, `age_pat`
+- `gender_HC`, `gender_pat`
+- `ICV_HC`, `ICV_pat`
+- `SBQ` : behavioral score vector
+
+* Step 2: Group Definition. Patients are split using:
+- Low SBQ ≤ threshold
+- High SBQ > threshold
+Default threshold: SBQ = 10
+
+* Step 3: Statistical analysis
+
 
 
