@@ -38,3 +38,13 @@ Statistical Model: For each ROI:  Volume ~ Age + Sex + ICV + ClinicalScore
 
 The script reports: Regression coefficients, p-values, Confidence intervals, R², Adjusted R², Cohen's f² effect size
 
+## *plot_SBQ_volume_relationship.m*
+
+SBQ–Brain Volume Association (Covariate-Corrected Analysis): This MATLAB code is used to plot the relationship between behavioral scores (SBQ) and regional brain volumes, while controlling for key confounding variables (age, gender, and intracranial volume).
+
+* Step 1: Covariate correction: For each ROI: Volume ~ Age + Gender + ICV. Residuals are extracted after removing covariate effects.
+* Step 2: Normalization: Residuals are standardized using healthy controls: Z-score = (Residual - Mean_HC) / SD_HC
+* Step 3: Behavioral association. For patients only: SBQ ~ Volume (z-scored, covariate-corrected)
+
+
+
