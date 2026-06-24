@@ -59,8 +59,8 @@ ANCOVA Group Comparison (HC vs Low vs High SBQ): This script performs ROI-wise A
 - `SBQ` : behavioral score vector
 
 * Step 2: Group Definition. Patients are split using:
-- Low SBQ ≤ threshold
-- High SBQ > threshold
+ Low SBQ ≤ threshold
+ High SBQ > threshold
 Default threshold: SBQ = 10
 
 * Step 3: Statistical analysis
