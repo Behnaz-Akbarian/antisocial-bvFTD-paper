@@ -30,9 +30,9 @@ Features
 * Automatic handling of missing values
 
 Inputs: 
-  A spreadsheet or table containing: Subject ID, Outcome variable and Covariates (e.g., age, sex, ICV)
-  ROI Measurements: For each subject for example ROI volume
-  ICV Files: MATLAB (.mat) files containing intracranial volume estimates.
+* A spreadsheet or table containing: Subject ID, Outcome variable and Covariates (e.g., age, sex, ICV)
+* ROI Measurements: For each subject for example ROI volume
+* ICV Files: MATLAB (.mat) files containing intracranial volume estimates.
 
 Statistical Model: For each ROI:  Volume ~ Age + Sex + ICV + ClinicalScore
 
